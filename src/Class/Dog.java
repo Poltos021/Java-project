@@ -13,11 +13,6 @@ public class Dog extends Animal{
 
     @Override
     public String Voice(){
-        if (isSleep == true && !isEat){
-            return "Это животное спит.";
-        }
-        else {
-            return "Гав";
-        }
+        return isVoice("Гав", isSleep, isEat);
     }
 }

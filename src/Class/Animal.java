@@ -11,6 +11,16 @@ public abstract class Animal {
         this.isEat = isEat;
     }
 
+    public String isVoice(String voice, boolean isSleep, boolean isEat){
+        if (isSleep == true && !isEat){
+            return String.format("Это животное спит");
+        }
+        else {
+            return String.format(voice);
+        }
+
+    }
+
     public abstract String Voice();
 
 }

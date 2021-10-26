@@ -10,8 +10,8 @@ public class Main {
         Cat cat = new Cat();
         Dog dog = new Dog();
 
-        cat.setSleep(false);
-        //cat.setEat(true);
+        cat.setSleep(true);
+        cat.setEat(true);
         System.out.println(cat.Voice());
 
         dog.setSleep(true);

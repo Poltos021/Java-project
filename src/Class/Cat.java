@@ -14,11 +14,6 @@ public class Cat extends Animal {
 
     @Override
     public String Voice(){
-        if (isSleep == true && !isEat){
-            return "Это животное спит.";
-        }
-        else {
-            return "Мяу";
-        }
+        return isVoice("Мяу",isSleep, isEat);
     }
 }
